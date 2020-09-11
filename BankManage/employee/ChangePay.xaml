@@ -1,0 +1,23 @@
+﻿<Page x:Class="BankManage.employee.ChangePay"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="500"
+	Title="ChangePay">
+
+    <Grid>
+        <Label Content="姓名：陈赞如" HorizontalAlignment="Left"  Margin="86,26,0,0" VerticalAlignment="Top"/>
+        <!--<DataGrid HorizontalAlignment="Left" Height="26" Margin="137,49,0,0" VerticalAlignment="Top" Width="111" SelectionChanged="DataGrid_SelectionChanged" FontSize="14"/>-->
+        <Label Content="ID：00001" HorizontalAlignment="Left"  Margin="86,72,0,0" VerticalAlignment="Top"/>
+        <!--<DataGrid HorizontalAlignment="Left" Height="26" Margin="346,49,0,0" VerticalAlignment="Top" Width="111" SelectionChanged="DataGrid_SelectionChanged"/>-->
+        <!--<DataGrid HorizontalAlignment="Left" Height="26" Margin="175,91,0,0" VerticalAlignment="Top" Width="126" SelectionChanged="DataGrid_SelectionChanged"/>-->
+        <Button Content="上班打卡" HorizontalAlignment="Left" Height="29" Margin="36,242,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
+        <Button Content="下班打卡" HorizontalAlignment="Left" Height="29" Margin="184,242,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_1"/>
+        <Button Content="工资查询" HorizontalAlignment="Left" Height="29" Margin="343,242,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_2" />
+        <Label Content="本日工作目标:  8小时" HorizontalAlignment="Left"  Margin="86,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="本日最多可加班时长：2小时" HorizontalAlignment="Left"  Margin="86,166,0,0" VerticalAlignment="Top"/>
+        <Label Name="Label1" Content="" HorizontalAlignment="Left" Height="43" Margin="235,0,-16,0" VerticalAlignment="Top" Width="281" FontSize="18" FontFamily="Arial Black" FontWeight="Bold"/>
+    </Grid>
+</Page>

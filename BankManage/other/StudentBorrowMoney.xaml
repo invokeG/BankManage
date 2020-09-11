@@ -1,0 +1,52 @@
+﻿<Page x:Class="BankManage.other.StudentBorrowMoney"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300" Title="NewAccount">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="7*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="学生短期借款" FontSize="20" TextAlignment="Center" Grid.Row="0" Grid.ColumnSpan="2" ></TextBlock>
+            <TextBlock Margin="7"  Grid.Row="1">学生证号：</TextBlock>
+            <TextBox Name="txtStudentNum" Margin="5" Grid.Column="1"  Grid.Row="1"></TextBox>
+            <TextBlock Margin="7"  Grid.Row="2">使用账号：</TextBlock>
+            <TextBox Name="txtAccountNo" Margin="5" Grid.Column="1"  Grid.Row="2"></TextBox>
+            <TextBlock Margin="7"  Grid.Row="3">账户名：</TextBlock>
+            <TextBox Name="txtStudentName" Margin="5" Grid.Column="1"  Grid.Row="3"></TextBox>
+            <TextBlock Margin="7"  Grid.Row="4">身份证号：</TextBlock>
+            <TextBox Name="txtIDCard" Margin="5" Grid.Column="1"  Grid.Row="4"></TextBox>
+            <TextBlock Margin="7"  Grid.Row="5">借款时长：</TextBlock>
+            <TextBox Name="txtBorrowTime" Margin="5" Grid.Column="1"  Grid.Row="5"></TextBox>
+            <Label x:Name="label" Content="天" Grid.Column="2" HorizontalAlignment="Right"  Grid.Row="5" VerticalAlignment="Top"/>
+            <TextBlock Margin="7"  Grid.Row="6">借款金额：</TextBlock>
+            <TextBox Name="txtBorrowMoney" Margin="5" Grid.Column="1"  Grid.Row="6"></TextBox>
+            <StackPanel Grid.Row="7" HorizontalAlignment="Center" Grid.ColumnSpan="2" Orientation="Horizontal" >
+                <Button Name="btnOk"  Width="50" Margin="10,10,2,10" Padding="3"  Click="BtnOk_Click">确定</Button>
+                <Button Name="btnCancel"  Width="50" Margin="2,10,10,10" Padding="3" Click="BtnCancel_Click">取消</Button>
+            </StackPanel>
+            
+        </Grid>
+        <Grid Grid.Row="1">
+            <Frame x:Name="frame2" ></Frame>
+        </Grid>
+    </Grid>
+</Page>
